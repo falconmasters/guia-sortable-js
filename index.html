@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/estilos.css">
+	<title>Guía Completa de Sortable JS</title>
+</head>
+<body>
+	<div class="container">
+		<div class="row mt-5">
+			<div class="col-6 my-5">
+				<h2 class="mb-3">Lista de tareas</h2>
+
+				<div class="list-group" id="tareas">
+
+					<div class="titulo list-group-item list-group-item-primary" data-identificador="1">
+						<h5 class="mb-0">Tareas personales</h5>
+					</div>
+
+					<div class="list-group-item" data-identificador="2">
+						<h5><i class="fas fa-grip-lines mr-2"></i> Ir al cine</h5>
+						<p class="mb-0">A las 8pm</p>
+					</div>
+					
+
+					<div class="list-group-item" data-identificador="3">
+						<h5 class="mb-0"><i class="fas fa-grip-lines mr-2"></i> Comprar pizza</h5>
+					</div>
+
+					<div class="titulo list-group-item list-group-item-success" data-identificador="4">
+						<h5 class="mb-0">Tareas de trabajo</h5>
+					</div>
+
+					<div class="list-group-item" data-identificador="5">
+						<h5><i class="fas fa-grip-lines mr-2"></i> Grabar tutorial</h5>
+						<p class="mb-0">Grabar, editar y subir a youtube el video de Sortable JS</p>
+					</div>
+
+				</div>
+				<button class="btn btn-sm btn-primary mt-3" id="toggle">Bloquear</button>
+			</div>
+
+			<div class="col-6 my-5">
+				<h2 class="mb-3">Lista de tareas completadas</h2>
+
+				<div class="list-group" id="tareasCompletadas">
+					<div class="list-group-item">
+						<h5><i class="fas fa-grip-lines mr-2"></i> Ir al cine</h5>
+						<p class="mb-0">A las 8pm</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<script src="https://kit.fontawesome.com/2c36e9b7b1.js" crossorigin="anonymous"></script>
+	<script src="js/Sortable.min.js"></script>
+	<script src="js/options.js"></script>
+</body>
+</html>
